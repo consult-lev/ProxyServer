@@ -16,7 +16,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.httpBasic().disable();
 		http.authorizeRequests() //
 				.antMatchers("/resources/**").permitAll()//
-				.anyRequest().permitAll()// .authenticated() //
+				.anyRequest().authenticated() // .permitAll()//
 				// login
 				.and().formLogin().loginPage("/login").permitAll();
 		http.authenticationProvider(customAuthenticationProvider);
