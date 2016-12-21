@@ -7,12 +7,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = "ru.app")
-public class ServerProxyAppWebApplication implements CommandLineRunner {
+public class ProxyServerAppWebApplication implements CommandLineRunner {
 
-	private static final Logger logger = LogManager.getLogger(ServerProxyAppWebApplication.class);
+	private static final Logger logger = LogManager.getLogger(ProxyServerAppWebApplication.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServerProxyAppWebApplication.class, args);
+		SpringApplication.run(ProxyServerAppWebApplication.class, args);
 	}
 
 	@Override
